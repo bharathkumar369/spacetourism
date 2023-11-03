@@ -1,0 +1,121 @@
+.technology{
+    color: white;
+    
+}
+.technology__h3{
+    color: white;
+    padding-top: 2rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+}
+
+.technology__main{
+   width: 80%;
+   margin: 10rem auto auto auto;
+}
+@media(max-width:600px) {
+    .technology__main{
+        width: 100%;
+        margin-top: 6rem;
+    }
+}
+.technology__ul{
+    display: flex;
+    flex-direction: column;
+   
+}
+@media(max-width:600px) {
+    .technology__ul{
+        display: flex;
+        flex-direction: row;
+       gap: 1rem;
+    }
+}
+.technology__item{
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: white;
+    margin:1rem 0rem;
+    position: relative;
+    cursor: pointer;
+}
+.technology__item:hover{
+    background-color: rgb(164, 91, 91);
+    color: white;
+    
+}
+.technology__number{
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    left: 18px;
+}
+
+.technology__left{
+    width: 50%;
+    gap: 5rem;
+}
+@media(min-width:601px) and (max-width:900px){
+    .technology__left{
+        width: 50%;
+        gap: 5rem;
+    }
+    .technology__right{
+        width: 50%;
+        align-self:auto;
+    }
+    .technology__image{
+        width: 15rem;
+        height: 10rem;
+    }
+    
+}
+
+@media(max-width:600px) {
+    .technology__left{
+        margin: 0rem 2rem;
+        width: 100%;
+        gap: 5rem;
+        text-align: start;
+    }
+}
+
+@media(max-width:600px) {
+    .technology__right{
+        width: 90%;
+    }
+}
+.technology__text{
+    width: 50%;
+}
+@media(max-width:600px) {
+    .technology__text{
+        width: 90%;       
+    }
+}
+
+@media(max-width:600px) {
+    .technology__image{
+        width: 20rem;
+        height: 15rem;
+        margin:0rem 2rem;
+    }
+}
+.technology__name{
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.technology__technology{
+    font-weight: 200;
+    font-size: 1rem;
+}
+.technology__description{
+    font-weight: 400;
+    font-size: 1rem;
+}

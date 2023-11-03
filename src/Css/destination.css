@@ -1,0 +1,160 @@
+.destination{
+    color: white;
+    margin-top:100px;
+    display: flex; 
+    padding-top: 200px;
+    font-family: 'Dosis', sans-serif;
+}
+@media(max-width:600px){
+    .destination{
+        display: block;
+        padding-top: 7rem;
+
+    }
+}
+
+.destinaton__hr{
+    font-family: 100;
+}
+.destination__h3{
+    color: white;
+    margin-top: 5rem;
+    font-weight: 500;
+    padding-top: 3rem;
+    letter-spacing: .2rem;
+}
+.destination--left{
+    width:50%;
+}
+@media(max-width:600px){
+    .destination--left{
+        width: 100%;
+    }
+}
+
+.destination--right{
+    width: 50%;
+}
+@media(max-width:600px){
+    .destination--right{
+       width: 100%;
+    }
+}
+.destination--descrip{
+    padding-left: 7rem;
+    font-size: 1rem;
+}
+@media(max-width:600px){
+    .destination--descrip{
+       padding-left: 0;
+    }
+}
+
+.destination__ul{
+    display: flex;
+    flex-grow: 0;
+}
+@media(max-width:600px){
+    .destination__ul{
+       display: flex;
+       flex-direction: column;
+       padding-top: 3rem;
+    }
+}
+
+.destination__item{
+    list-style: none;
+    padding: 0rem 1rem;
+    cursor: pointer;
+    
+}
+
+.destination__btn{
+    padding: .3rem 1rem;
+    border: none;
+    font-weight: 900;
+    background-color: rgb(112, 72, 72);
+    cursor:pointer;
+    color: white;
+    border-radius: 2rem;
+    transition: all 0.3s;
+}
+@media(max-width:600px){
+    .destination__btn{
+        width: 40%;
+        margin: 1rem 0rem;
+    }
+}
+.destination__btn:hover{
+    transform: translateY(-15px);
+    background-color: rgb(131, 131, 199);
+    color: black;
+}
+.destination__h1{
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: 1rem;
+    margin-bottom: 2rem;
+}
+.destination__p{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.destination__p-flex{
+    display: flex;
+    gap: 1rem;
+}
+.destination__distance{
+    font-weight: 500;
+    font-size:1.2rem;
+}
+.destination__travel{
+    font-weight: 500;
+    font-size:1.2rem;
+}
+/* -------------utilities-------------- */
+.animate{
+    animation-duration:1s;
+    animation-fill-mode: both;
+}
+.animate--infinite{
+    animation-iteration-count: infinite;
+}
+.animate--delay-1s{
+    animation-delay: 1s;
+}
+.animate--fast{
+    animation-duration: 0.6s;
+}
+.animate--slow{
+    animation-duration: 3s;
+}
+
+
+/* -------------------------------------- */
+@keyframes slideInleft  {
+    from {
+        transform:translateX(1200px)
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.slideInLeft{
+    animation-name: slideInleft;
+    animation-timing-function:ease-in;
+}
+
+@keyframes slideInRight{
+    from {
+        transform:translateX(-1200px)
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+.slideInRight{
+    animation-name: slideInRight;
+    animation-timing-function: ease-in;
+}
